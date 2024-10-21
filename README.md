@@ -1,2 +1,2 @@
-# fotografiaDise-o
+# Diseño
 Repositorio para proxecto de Diseño.
