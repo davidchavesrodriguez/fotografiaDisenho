@@ -6,7 +6,7 @@
     <title>Fotografía | Home</title>
 
     <!-- Enlaces a las hojas de estilo. Agregar más si hace falta. -->
-    <link rel="stylesheet" href="css/generalStyles.css"/>
+    <link rel="stylesheet" href="css/generalStyles.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/carousel.css" />
     <link rel="stylesheet" href="css/contact.css" />
@@ -39,6 +39,7 @@
 
     <main>
       <!-- DIFERENTES SECCIONES - JORGE/ALICIA -->
+      <p id="hola">hola</p>
       <section id="carousel">
         <div class="horizontal">
           <div id="div-img-1" class="div-foto">
@@ -68,10 +69,98 @@
     </main>
 
     <!-- FOOTER/CONTACTO - DEVID -->
-    <footer></footer>
+    <div id="contactAndFooter">
+      <section id="contactSection">
+        <div id="after_submit" class="hidden"></div>
 
+        <!-- FORM -->
+        <div class="form">
+          <div class="title">¡Hola!</div>
+          <div class="subtitle">¿Con ganas de contarme algo? Escríbeme:</div>
+          <div class="input-container ic1">
+            <input id="firstname" class="input" type="text" placeholder=" " />
+            <div class="cut"></div>
+            <label for="firstname" class="placeholder">Nombre</label>
+          </div>
+          <div class="input-container ic2">
+            <input id="lastname" class="input" type="text" placeholder=" " />
+            <div class="cut cut-short"></div>
+            <label for="lastname" class="placeholder">Email</label>
+          </div>
+          <div class="input-container ic2">
+            <input id="messageForm" class="input" type="text" placeholder=" " />
+            <div class="cut"></div>
+            <label for="email" class="placeholder">Mensaje</label>
+          </div>
+          <button type="button" class="submit">Enviar</button>
+        </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/gsap.min.js"></script>
-  <script type="text/javascript" src=""></script>
+        <!-- Social Media -->
+        <div id="socialMediaContainer">
+          <div class="contactMedia">
+            <label for="instagramContact">Instagram</label>
+            <a
+              href="https://www.instagram.com/manuel.fotografia/"
+              target="_blank"
+            >
+              <i
+                class="fa-brands fa-square-instagram icono-red-social"
+                id="instagramContact"
+              ></i
+            ></a>
+          </div>
+          <div class="contactMedia">
+            <label for="facebookContact">Facebook</label>
+            <a
+              href="https://www.facebook.com/tripode.ponferrada/"
+              target="_blank"
+            >
+              <i
+                class="fa-brands fa-square-facebook icono-red-social"
+                id="facebookContact"
+              ></i
+            ></a>
+          </div>
+          <div class="contactMedia">
+            <label for="whatsappContact">Whatsapp</label>
+            <a
+              href="https://api.whatsapp.com/send?phone=671893234"
+              target="_blank"
+            >
+              <i
+                class="fa-brands fa-square-whatsapp icono-red-social"
+                id="whatsappContact"
+              ></i
+            ></a>
+          </div>
+          <div class="contactMedia">
+            <label for="emailContact">Email</label>
+            <a href="mailto: manuelfotografia@gmail.com" target="_blank">
+              <i
+                class="fa-solid fa-envelope icono-red-social"
+                id="emailContact"
+              ></i
+            ></a>
+          </div>
+        </div>
+        <h2>Contacto</h2>
+      </section>
+      <footer>
+        <p id="copyright">
+          &copy; 2024 Manuel Fotografía. Todos los derechos reservados.
+        </p>
+        <div class="footer-menu">
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li>|</li>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li>|</li>
+            <li><a href="#">Cookies</a></li>
+            <li>|</li>
+            <li><a href="#">Privacidad</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

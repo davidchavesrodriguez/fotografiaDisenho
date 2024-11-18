@@ -5,6 +5,7 @@ header {
   background-size: cover;
   height: 100vh;
   margin: 0;
+  padding: 0;
 
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -24,29 +25,34 @@ header {
   color: white;
   padding: 1em 1em;
   font-size: 1.2em;
+
+  transition: color 1s ease;
 }
 
 .elemento-menu-navegacion:hover {
   transition: color 1s ease;
-  color: var(--color-secundario);
+  color: var(--color-principal);
 }
 
 #redes-sociales {
   color: white;
   grid-column: 5 / 6;
   grid-row: 1;
-  padding-top: 1em;
   display: flex;
   gap: 1em;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
 }
 
 .icono-red-social {
   font-size: 2em;
+  margin: 0;
 }
 
 .icono-red-social:hover {
   cursor: pointer;
-  color: var(--color-secundario);
+  color: var(--color-principal);
   transform: scale(1.1);
   transition: all 0.5s ease;
 }
