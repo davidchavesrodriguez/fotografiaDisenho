@@ -31,7 +31,7 @@ header {
 
 .elemento-menu-navegacion:hover {
   transition: color 1s ease;
-  color: var(--color-principal);
+  color: var(--color-secundario);
 }
 
 #redes-sociales {
@@ -52,7 +52,7 @@ header {
 
 .icono-red-social:hover {
   cursor: pointer;
-  color: var(--color-principal);
+  color: var(--color-secundario);
   transform: scale(1.1);
   transition: all 0.5s ease;
 }
