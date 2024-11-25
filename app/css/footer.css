@@ -20,12 +20,13 @@
 }
 
 .form {
+  display: flex;
   border: 2px solid var(--color-principal);
   border-radius: 20px;
   box-sizing: border-box;
   height: 400px;
-  padding: 20px;
-  width: 400px;
+  padding: 15px;
+  width: 50vw;
 }
 
 .title {
@@ -45,7 +46,7 @@
 }
 
 .input-container {
-  height: 50px;
+  height: 5vh;
   position: relative;
   width: 100%;
 }
@@ -60,8 +61,8 @@
 
 .input {
   background-color: #303245;
+  border: 2px solid var(--color-principal);
   border-radius: 12px;
-  border: 0;
   box-sizing: border-box;
   color: white;
   font-size: 18px;
@@ -72,7 +73,7 @@
 }
 
 .cut {
-  background-color: #15172b;
+  background-color: #000000;
   border-radius: 10px;
   height: 20px;
   left: 20px;
@@ -93,7 +94,7 @@
 }
 
 .placeholder {
-  color: #65657b;
+  color: var(--color-secundario);
   font-family: sans-serif;
   left: 20px;
   line-height: 14px;
@@ -135,6 +136,10 @@
   background-color: #06b;
 }
 
+.contactImage {
+  width: 25vw;
+}
+
 #contactAndFooter .icono-red-social {
   font-size: 4em;
 }
@@ -167,7 +172,8 @@ footer a {
 /* Footer */
 footer {
   text-align: center;
-  color: var(--color-secundario);
+  color: var(--color-principal);
+  font-weight: bold;
   border-top: 3px solid var(--color-principal);
   margin-top: 5em;
 }
