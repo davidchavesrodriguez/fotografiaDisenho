@@ -95,12 +95,22 @@
             <div class="title">¡Hola!</div>
             <div class="subtitle">¿Con ganas de contarme algo? Escríbeme:</div>
             <div class="input-container ic1">
-              <input id="firstname" class="input" type="text" placeholder=" " />
+              <input
+                id="firstname"
+                class="input input_name"
+                type="text"
+                placeholder=" "
+              />
               <div class="cut"></div>
               <label for="firstname" class="placeholder">Nombre</label>
             </div>
             <div class="input-container ic2">
-              <input id="lastname" class="input" type="text" placeholder=" " />
+              <input
+                id="lastname"
+                class="input input_name"
+                type="text"
+                placeholder=" "
+              />
               <div class="cut cut-short"></div>
               <label for="lastname" class="placeholder">Email</label>
             </div>
@@ -114,13 +124,8 @@
               <div class="cut"></div>
               <label for="email" class="placeholder">Mensaje</label>
             </div>
-            <button type="button" class="submit">Enviar</button>
+            <button type="button" class="submit"><b>Enviar</b></button>
           </div>
-          <img
-            src="src/images/contactFooter/handshake.jpg"
-            alt="Handshake Greeting"
-            class="img contactImage"
-          />
         </div>
 
         <!-- Social Media -->
@@ -131,24 +136,10 @@
               href="https://www.instagram.com/manuel.fotografia/"
               target="_blank"
             >
-              <i
-                class="fa-brands fa-square-instagram icono-red-social"
-                id="instagramContact"
-              ></i
+              <i class="fa-brands fa-instagram icono-red-social"></i
             ></a>
           </div>
-          <div class="contactMedia">
-            <label for="facebookContact">Facebook</label>
-            <a
-              href="https://www.facebook.com/tripode.ponferrada/"
-              target="_blank"
-            >
-              <i
-                class="fa-brands fa-square-facebook icono-red-social"
-                id="facebookContact"
-              ></i
-            ></a>
-          </div>
+          <!-- -- -->
           <div class="contactMedia">
             <label for="whatsappContact">Whatsapp</label>
             <a
@@ -156,16 +147,27 @@
               target="_blank"
             >
               <i
-                class="fa-brands fa-square-whatsapp icono-red-social"
+                class="fa-brands fa-whatsapp icono-red-social"
                 id="whatsappContact"
               ></i
             ></a>
           </div>
+          <!-- -- -->
+          <div class="contactMedia">
+            <label for="twitterContact">X</label>
+            <a href="https://x.com/manurfotografia" target="_blank">
+              <i
+                class="fa-brands fa-x-twitter icono-red-social"
+                id="twitterContact"
+              ></i
+            ></a>
+          </div>
+          <!-- -- -->
           <div class="contactMedia">
             <label for="emailContact">Email</label>
             <a href="mailto: manuelfotografia@gmail.com" target="_blank">
               <i
-                class="fa-solid fa-envelope icono-red-social"
+                class="fa-sharp fa-solid fa-envelope icono-red-social"
                 id="emailContact"
               ></i
             ></a>
