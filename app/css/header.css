@@ -6,7 +6,6 @@ header {
   height: 100vh;
   margin: 0;
   padding: 0;
-
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(5, 1fr);
@@ -16,30 +15,57 @@ header {
   grid-column: 1;
   grid-row: 3;
   display: flex;
-  flex-direction: column;
-  margin-left: 1em;
+  flex-direction: column;  /* Menú vertical inicialmente */
+  position: fixed;
+  top: 35vh;
+  left: 0;
+  width: 100%;  /* Ocupa todo el ancho */
 }
 
-.elemento-menu-navegacion {
+#menu-navegacion.fixed {
+  position: fixed;
+  bottom: 0;  /* Fijado al bottom */
+  left: 0;
+  width: 100%;  /* Ocupa todo el ancho */
+  display: flex;
+  flex-direction: row;  /* Menú en fila */
+  justify-content: center;  /* Centra los elementos horizontalmente */
+  align-items: center;  /* Alineación vertical centrada */
+  background-color: rgba(0, 0, 0, 0.7);  /* Fondo oscuro */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);  /* Sombra para profundidad */
+  z-index: 1000;  /* Asegura que esté encima de otros elementos */
+}
+
+#menu-navegacion ul {
+  display: flex;
+  padding: 0;  /* Elimina cualquier padding de la lista */
+  margin: 0;  /* Elimina cualquier margen de la lista */
+}
+
+#menu-navegacion li {
+  list-style: none;  /* Elimina los puntos de la lista */
+}
+
+#menu-navegacion a {
   text-decoration: none;
   color: white;
-  padding: 1em 1em;
+  padding: 0.5em 1.5em;  /* Espaciado entre los elementos */
   font-size: 1.2em;
-
-  transition: color 1s ease;
+  display: inline-block;
+  transition: color 0.3s ease;
 }
 
-.elemento-menu-navegacion:hover {
-  transition: color 1s ease;
-  color: var(--color-secundario);
+#menu-navegacion a:hover {
+  color: var(--color-secundario);  /* Color al hacer hover */
 }
 
+/* Para el caso de redes sociales (si quieres añadirlas en la parte inferior también) */
 #redes-sociales {
   color: white;
   grid-column: 5 / 6;
   grid-row: 1;
   display: flex;
-  gap: 1em;
+  gap: 3em;
   align-items: center;
   justify-content: flex-start;
   padding: 0;
@@ -47,7 +73,6 @@ header {
 
 .icono-red-social {
   font-size: 2em;
-  margin: 0;
 }
 
 .icono-red-social:hover {
