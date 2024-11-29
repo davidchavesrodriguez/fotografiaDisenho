@@ -27,10 +27,9 @@
     to bottom right,
     var(--color-principal),
     black,
-    black
+    var(--color-principal)
   );
   text-align: center;
-  border: 2px solid white;
   border-radius: 20px;
   box-sizing: border-box;
   height: 46vh;
@@ -72,7 +71,6 @@
 /* Inputs */
 .input {
   background-color: #303245;
-  border: 2px solid white;
   border-radius: 12px;
   box-sizing: border-box;
   color: white;
@@ -166,7 +164,8 @@
 
 #contactAndFooter .icono-red-social {
   font-size: 4em;
-  color: var(--color-principal);
+  color: white;
+  padding: 5vh;
 }
 
 #contactAndFooter .contactMedia {
@@ -178,23 +177,29 @@
 
 #contactAndFooter .contactMedia:hover {
   cursor: pointer;
-  background-color: var(--color-principal);
   color: var(--color-secundario);
-  transform: scale(1.1);
-  transition: all 0.5s ease;
 }
 
 #contactAndFooter .contactMedia:hover .icono-red-social {
   color: var(--color-secundario);
-  transform: scale(1.1);
-  transition: all 0.5s ease;
 }
 
 #socialMediaContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 10%;
+  background: linear-gradient(
+    to bottom right,
+    var(--color-principal),
+    black,
+    var(--color-principal)
+  );
+}
+
+#redes {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 50%;
-  text-align: center;
 }
 
 /* Footer */

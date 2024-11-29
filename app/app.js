@@ -1,7 +1,6 @@
+let horizontalSection = document.querySelector(".horizontal");
 
-let horizontalSection = document.querySelector('.horizontal')
-
-console.log(horizontalSection.scrollWidth)
+console.log(horizontalSection.scrollWidth);
 
 // gsap.to('.horizontal', {
 //     x: () => horizontalSection.scrollWidth * -1,
@@ -17,15 +16,15 @@ console.log(horizontalSection.scrollWidth)
 //     }
 // })
 
-const menuNavegacion = document.getElementById('menu-navegacion')
+const menuNavegacion = document.getElementById("menu-navegacion");
 
-window.addEventListener('scroll', () => {
-    const scrollPosition  = window.scrollY;
+// window.addEventListener('scroll', () => {
+//     const scrollPosition  = window.scrollY;
 
-    if(scrollPosition >= window.innerHeight) {
-        menuNavegacion.classList.add('fixed')
-    } else {
-        menuNavegacion.classList.remove('fixed')
-    }
-}
-);
+//     if(scrollPosition >= window.innerHeight) {
+//         menuNavegacion.classList.add('fixed')
+//     } else {
+//         menuNavegacion.classList.remove('fixed')
+//     }
+// }
+// );
