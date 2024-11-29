@@ -73,6 +73,11 @@ header {
 
 .icono-red-social {
   font-size: 2em;
+  color: white;
+}
+
+a .icono-red-social {
+  color: white;
 }
 
 .icono-red-social:hover {
