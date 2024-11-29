@@ -2,20 +2,25 @@
 
 ## Supported Versions
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+We provide security updates for specific versions of our application. Below is a list of the versions that are currently supported:
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+| Version | Supported |
+| ------- | --------- |
+| 0.9.x   | ✅        |
+| 0.8.x   | ✅        |
+| 0.7.x   | ❌        |
+| < 0.7   | ❌        |
+
+If you are using a version marked as unsupported, we recommend upgrading to the latest supported version to ensure you receive security updates.
 
 ## Reporting a Vulnerability
 
-Use this section to tell people how to report a vulnerability.
+If you discover a security vulnerability, please report it immediately by emailing **A22DavidCR@iessanclemente.net**.
 
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+### What to Expect After Reporting
+
+Once we receive your report, we will acknowledge it within **48 hours**. You can expect a response with an initial assessment within **7 days**. If the vulnerability is confirmed, we will prioritize a fix for the next supported version.
+
+If the report is declined, we will provide you with a brief explanation.
+
+We value your help in keeping our application secure and appreciate your cooperation.

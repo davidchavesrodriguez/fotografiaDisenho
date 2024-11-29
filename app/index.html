@@ -48,48 +48,46 @@
       <section id="carousel">
         <div class="horizontal">
           <div id="div-img-1" class="div-foto">
-            <img src="src/images/carousel/1.jpg" alt="imagen">
+            <img src="src/images/carousel/1.jpg" alt="imagen" />
           </div>
           <div id="div-img-2" class="div-foto">
-            <img src="src/images/carousel/2.jpg" alt="imagen">
+            <img src="src/images/carousel/2.jpg" alt="imagen" />
           </div>
           <div id="div-img-3" class="div-foto">
-            <img src="src/images/carousel/3.jpg" alt="imagen">
+            <img src="src/images/carousel/3.jpg" alt="imagen" />
           </div>
           <div id="div-img-4" class="div-foto">
-            <img src="src/images/carousel/4.jpg" alt="imagen">
+            <img src="src/images/carousel/4.jpg" alt="imagen" />
           </div>
           <div id="div-img-5" class="div-foto">
-            <img src="src/images/carousel/5.jpg" alt="imagen">
+            <img src="src/images/carousel/5.jpg" alt="imagen" />
           </div>
           <div id="div-img-6" class="div-foto">
-            <img src="src/images/carousel/6.jpg" alt="imagen">
+            <img src="src/images/carousel/6.jpg" alt="imagen" />
           </div>
         </div>
       </section>
 
       <!-- DIFERENTES SECCIONES - ALICIA -->
       <section id="sobreMi">
+        <h1>Sobre Mí</h1>
 
-        <h1>Sobre Mi</h1>
-
-
-        <div id="SM_foto"></div> 
-      
+        <div id="SM_foto"></div>
 
         <div id="SM_text">
           <div id="SMT_filtro"></div>
           <p>
-            Hola, soy Manuel, un fotógrafo especializado en retratos intimistas de personas y animales. 
-            Mi trabajo se centra en capturar la esencia más genuina y profunda de mis sujetos, 
-            explorando la conexión entre la luz, la expresión y el alma. 
-            Me esfuerzo por crear imágenes que transmitan emociones y cuenten historias personales, 
-            donde cada mirada y gesto revele algo único y auténtico. Si estás buscando algo más que una simple imagen, 
-            y quieres capturar la verdadera esencia de un momento o de alguien especial, 
-            me encantaría colaborar contigo y crear recuerdos visuales que perduren en el tiempo.
+            Hola, soy Manuel, un fotógrafo especializado en retratos intimistas
+            de personas y animales. Mi trabajo se centra en capturar la esencia
+            más genuina y profunda de mis sujetos, explorando la conexión entre
+            la luz, la expresión y el alma. Me esfuerzo por crear imágenes que
+            transmitan emociones y cuenten historias personales, donde cada
+            mirada y gesto revele algo único y auténtico. Si estás buscando algo
+            más que una simple imagen, y quieres capturar la verdadera esencia
+            de un momento o de alguien especial, me encantaría colaborar contigo
+            y crear recuerdos visuales que perduren en el tiempo.
           </p>
         </div>
-        <hr>
       </section>
     </main>
 
@@ -100,24 +98,41 @@
 
         <!-- FORM -->
         <div class="form">
-          <div class="title">¡Hola!</div>
-          <div class="subtitle">¿Con ganas de contarme algo? Escríbeme:</div>
-          <div class="input-container ic1">
-            <input id="firstname" class="input" type="text" placeholder=" " />
-            <div class="cut"></div>
-            <label for="firstname" class="placeholder">Nombre</label>
+          <div id="formFields">
+            <div class="title">¡Hola!</div>
+            <div class="subtitle">¿Con ganas de contarme algo? Escríbeme:</div>
+            <div class="input-container ic1">
+              <input
+                id="firstname"
+                class="input input_name"
+                type="text"
+                placeholder=" "
+              />
+              <div class="cut"></div>
+              <label for="firstname" class="placeholder">Nombre</label>
+            </div>
+            <div class="input-container ic2">
+              <input
+                id="lastname"
+                class="input input_name"
+                type="text"
+                placeholder=" "
+              />
+              <div class="cut cut-short"></div>
+              <label for="lastname" class="placeholder">Email</label>
+            </div>
+            <div class="input-container ic2">
+              <input
+                id="messageForm"
+                class="input"
+                type="text"
+                placeholder=" "
+              />
+              <div class="cut"></div>
+              <label for="email" class="placeholder">Mensaje</label>
+            </div>
+            <button type="button" class="submit"><b>Enviar</b></button>
           </div>
-          <div class="input-container ic2">
-            <input id="lastname" class="input" type="text" placeholder=" " />
-            <div class="cut cut-short"></div>
-            <label for="lastname" class="placeholder">Email</label>
-          </div>
-          <div class="input-container ic2">
-            <input id="messageForm" class="input" type="text" placeholder=" " />
-            <div class="cut"></div>
-            <label for="email" class="placeholder">Mensaje</label>
-          </div>
-          <button type="button" class="submit">Enviar</button>
         </div>
 
         <!-- Social Media -->
@@ -128,24 +143,10 @@
               href="https://www.instagram.com/manuel.fotografia/"
               target="_blank"
             >
-              <i
-                class="fa-brands fa-square-instagram icono-red-social"
-                id="instagramContact"
-              ></i
+              <i class="fa-brands fa-instagram icono-red-social"></i
             ></a>
           </div>
-          <div class="contactMedia">
-            <label for="facebookContact">Facebook</label>
-            <a
-              href="https://www.facebook.com/tripode.ponferrada/"
-              target="_blank"
-            >
-              <i
-                class="fa-brands fa-square-facebook icono-red-social"
-                id="facebookContact"
-              ></i
-            ></a>
-          </div>
+          <!-- -- -->
           <div class="contactMedia">
             <label for="whatsappContact">Whatsapp</label>
             <a
@@ -153,16 +154,27 @@
               target="_blank"
             >
               <i
-                class="fa-brands fa-square-whatsapp icono-red-social"
+                class="fa-brands fa-whatsapp icono-red-social"
                 id="whatsappContact"
               ></i
             ></a>
           </div>
+          <!-- -- -->
+          <div class="contactMedia">
+            <label for="twitterContact">X</label>
+            <a href="https://x.com/manurfotografia" target="_blank">
+              <i
+                class="fa-brands fa-x-twitter icono-red-social"
+                id="twitterContact"
+              ></i
+            ></a>
+          </div>
+          <!-- -- -->
           <div class="contactMedia">
             <label for="emailContact">Email</label>
             <a href="mailto: manuelfotografia@gmail.com" target="_blank">
               <i
-                class="fa-solid fa-envelope icono-red-social"
+                class="fa-sharp fa-solid fa-envelope icono-red-social"
                 id="emailContact"
               ></i
             ></a>
