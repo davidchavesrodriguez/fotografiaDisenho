@@ -17,15 +17,19 @@ console.log(horizontalSection.scrollWidth)
 //     }
 // })
 
+// SCROLL NAVIGATION
+
 const menuNavegacion = document.getElementById('menu-navegacion')
 
 window.addEventListener('scroll', () => {
     const scrollPosition  = window.scrollY;
 
     if(scrollPosition >= window.innerHeight) {
+        menuNavegacion.style.top = '100%'
         menuNavegacion.classList.add('fixed')
     } else {
         menuNavegacion.classList.remove('fixed')
+        menuNavegacion.style.top = '35vh'
     }
 }
 );

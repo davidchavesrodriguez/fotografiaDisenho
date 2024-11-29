@@ -5,6 +5,10 @@
   --color-secundario: #e4b533;
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   background-color: black;
